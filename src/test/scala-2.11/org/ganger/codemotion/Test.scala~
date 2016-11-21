@@ -1,0 +1,62 @@
+package org.ganger.codemotion
+import org.scalatest.{BeforeAndAfter, FlatSpec, Matchers}
+
+/**
+  * Created by pau on 19/11/16.
+  */
+class Test extends FlatSpec with Matchers with BeforeAndAfter {
+
+  val folder = Folder("Name", None)
+
+  "An empty folder" should "have name" in {
+    folder.name shouldBe "Name"
+  }
+
+  "An empty folder" should "have an empty list of folders" in {
+    folder.children shouldBe empty
+  }
+
+  "Adding one folder to folder" should "result in a folder with one child" in {
+    val newFolder = folder.add(Folder("prueba", None))
+    newFolder.children.getOrElse(Seq()).size shouldBe 1
+  }
+
+  "Adding one file to empty folder" should "result in a folder with one child" in {
+    val newFolder = folder.add(File("prueba"))
+    newFolder.children.getOrElse(Seq()).size shouldBe 1
+  }
+
+  "Adding one file and one folder to empty folder" should "result in a folder with two children" in {
+    val oneFile = folder.add(File("file1"))
+    val twoItems = oneFile.add(Folder("Folder1", None))
+    twoItems.children.getOrElse(Seq()).size shouldBe 2
+  }
+
+  "Print one Item" should "print one item name in screen" in {
+    folder.printName shouldBe "Name"
+  }
+}
+
+case class Folder(override val name: String, children: Option[Seq[FileItem]]) extends FileItem {
+
+  def add(folder: FileItem) : Folder = {
+    Folder(name, Option(children.getOrElse(Seq()).:+(folder)))
+  }
+
+  override def printName: String = {
+    name.toString
+  }
+}
+
+case class File(override val name: String) extends FileItem {
+
+  override def printName: String = {
+    name.toString
+  }
+}
+
+trait FileItem {
+  val name: String
+
+  def printName: String
+}

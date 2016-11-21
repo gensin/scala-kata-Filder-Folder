@@ -1,0 +1,42 @@
+(
+ :root-dir "/home/pau/scalaDir/codemotion2016"
+ :cache-dir "/home/pau/scalaDir/codemotion2016/.ensime_cache"
+ :scala-compiler-jars ("/home/pau/.sbt/boot/scala-2.10.4/lib/scala-compiler.jar" "/home/pau/.sbt/boot/scala-2.10.4/lib/scala-library.jar" "/home/pau/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar" "/home/pau/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.4.jar")
+ :name "codemotion2016"
+ :java-home "/usr/lib/jvm/java-8-openjdk-amd64"
+ :java-flags ("-Xss2m" "-Xms1024m" "-Xmx1024m" "-XX:ReservedCodeCacheSize=128m" "-XX:MaxMetaspaceSize=256m")
+ :java-compiler-args nil
+ :reference-source-roots nil
+ :scala-version "2.10.4"
+ :compiler-args ("-feature" "-deprecation" "-Xlint" "-Ywarn-dead-code" "-Ywarn-numeric-widen" "-Xfuture" "-Ymacro-no-expand")
+ :subprojects ((
+   :name "codemotion2016"
+   :source-roots ("/home/pau/scalaDir/codemotion2016/src/test/scala-2.11")
+   :targets ("/home/pau/scalaDir/codemotion2016/target/scala-2.11/classes")
+   :test-targets ("/home/pau/scalaDir/codemotion2016/target/scala-2.11/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/home/pau/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar")
+   :runtime-deps nil
+   :test-deps ("/home/pau/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar" "/home/pau/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.5.jar" "/home/pau/.ivy2/cache/org.scalactic/scalactic_2.11/bundles/scalactic_2.11-3.0.0.jar" "/home/pau/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-3.0.0.jar")
+   :doc-jars ("/home/pau/scalaDir/codemotion2016/target/scala-2.11/codemotion2016_2.11-1.0-javadoc.jar" "/home/pau/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.11.8-javadoc.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/docs/scala-parser-combinators_2.11-1.0.4-javadoc.jar" "/home/pau/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.11.8-javadoc.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/docs/scala-xml_2.11-1.0.5-javadoc.jar" "/home/pau/.ivy2/cache/org.scalactic/scalactic_2.11/docs/scalactic_2.11-3.0.0-javadoc.jar" "/home/pau/.ivy2/cache/org.scalatest/scalatest_2.11/docs/scalatest_2.11-3.0.0-javadoc.jar")
+   :reference-source-roots ("/home/pau/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.4-sources.jar" "/home/pau/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.8-sources.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.5-sources.jar" "/home/pau/.ivy2/cache/org.scalactic/scalactic_2.11/srcs/scalactic_2.11-3.0.0-sources.jar" "/home/pau/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-3.0.0-sources.jar")))
+ :projects ((
+   :name "codemotion2016"
+   :depends-on-projects nil
+   :runtime-jars nil
+   :doc-jars ("/home/pau/scalaDir/codemotion2016/target/scala-2.11/codemotion2016_2.11-1.0-javadoc.jar" "/home/pau/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.11.8-javadoc.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/docs/scala-parser-combinators_2.11-1.0.4-javadoc.jar" "/home/pau/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.11.8-javadoc.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/docs/scala-xml_2.11-1.0.5-javadoc.jar" "/home/pau/.ivy2/cache/org.scalactic/scalactic_2.11/docs/scalactic_2.11-3.0.0-javadoc.jar" "/home/pau/.ivy2/cache/org.scalatest/scalatest_2.11/docs/scalatest_2.11-3.0.0-javadoc.jar")
+   :reference-sources ("/home/pau/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.4-sources.jar" "/home/pau/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.8-sources.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.5-sources.jar" "/home/pau/.ivy2/cache/org.scalactic/scalactic_2.11/srcs/scalactic_2.11-3.0.0-sources.jar" "/home/pau/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-3.0.0-sources.jar")
+   :configurations (
+    (:name "compile"
+     :sources nil
+     :targets ("/home/pau/scalaDir/codemotion2016/target/scala-2.11/classes")
+     :scalac-options ("-feature" "-deprecation" "-Xlint" "-Ywarn-dead-code" "-Ywarn-numeric-widen" "-Xfuture" "-Ymacro-no-expand")
+     :javac-options nil
+     :library-dependencies ("/home/pau/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar")) 
+    (:name "test"
+     :sources ("/home/pau/scalaDir/codemotion2016/src/test/scala-2.11")
+     :targets ("/home/pau/scalaDir/codemotion2016/target/scala-2.11/test-classes")
+     :scalac-options ("-feature" "-deprecation" "-Xlint" "-Ywarn-dead-code" "-Ywarn-numeric-widen" "-Xfuture" "-Ymacro-no-expand")
+     :javac-options nil
+     :library-dependencies ("/home/pau/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar" "/home/pau/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar" "/home/pau/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.5.jar" "/home/pau/.ivy2/cache/org.scalactic/scalactic_2.11/bundles/scalactic_2.11-3.0.0.jar" "/home/pau/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-3.0.0.jar")))))
+)
