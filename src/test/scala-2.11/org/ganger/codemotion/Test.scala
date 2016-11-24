@@ -33,7 +33,7 @@ class Test extends FlatSpec with Matchers with BeforeAndAfter {
   }
 
   "Print one Item" should "print one item name in screen" in {
-    folder.printName shouldBe "Name"
+    folder.printName shouldBe "Name\n"
   }
 }
 
@@ -44,14 +44,14 @@ case class Folder(override val name: String, children: Option[Seq[FileItem]]) ex
   }
 
   override def printName: String = {
-    name.toString
+    name.toString + "\n"
   }
 }
 
 case class File(override val name: String) extends FileItem {
 
   override def printName: String = {
-    name.toString
+    name.toString + "\n"
   }
 }
 
